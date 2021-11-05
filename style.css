@@ -1,0 +1,311 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+*{
+    max-width: 100%;
+}
+
+* p{
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D0221;
+
+
+}
+
+.rounded-circle{
+    padding:10px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    font-family: 'Raleway', sans-serif;
+    gap:20vw;
+}
+
+.navbar-nav{
+    width: 30vw;
+    justify-content: space-evenly;
+   
+}
+
+.mynavbar{
+    position: sticky;
+    top:0;
+    
+    z-index:1;
+    width:100%;
+}
+
+
+.navbar-brand{
+    font-family: 'Noto Serif Display', serif;  
+    font-size: 30px;
+
+}
+
+h1{
+    font-size: 70px;
+}
+
+.customtips{
+    width:100%;
+}
+
+.custombg {
+    height: 100vh;
+    display: flex;
+    background-color: #0D0221;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Noto Serif Display', serif;  
+}
+
+
+.custombg p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin: 30px;
+
+}
+
+.customabout{
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    color:#0D0221;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+.wrapabout{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.myvideo{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.customabout h2{
+    font-family: 'Noto Serif Display', serif;  
+    font-size:45px;
+
+    color:#0D0221;
+    margin-bottom: 90px;
+}
+
+.customabout p {
+    color:#0D0221;
+
+}
+
+#callout{
+    color:#CA3CFF;
+}
+
+.leftside{
+    background-color: #CDEDF6;
+    height:100vh;
+    color: #0D0221;
+    align-items: center;
+    padding:50px;
+    font-family:'Noto Serif Display', serif;
+    text-align: right;
+    font-size:100px;
+}
+
+.small{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+
+#subtle{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.rightside{
+    font-family: 'Raleway', sans-serif;
+    background-color: #1982C4;
+    height:100vh;
+    align-items: center;
+    padding:50px;
+    color: #0D0221;
+}
+
+.rightside h5{
+    font-weight: 600;
+}
+
+.customsubscribe {
+    background-image: linear-gradient( 139.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.customsubscribe h5{
+    font-weight: 600;
+}
+
+.card{
+    width: 75%;
+    height: 50%;
+}
+
+.myfooter{
+    background-color: #0D0221;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 20px;
+    height:60px;
+}
+
+.myfooter a{
+    color:aliceblue
+}
+
+
+@media screen and (max-width: 1024px) {
+    .leftside, .rightside{
+        height:820px;
+    }
+
+    .rightside p{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .leftside, .rightside{
+        height: 1200px ;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .leftside {
+        height: 220px;
+        text-align: center;
+        padding-top: 100px;
+        justify-content: center;
+    }
+
+    .rightside{
+        height:1150px;
+        padding-bottom: 50px;
+    }
+    
+    #subtle {
+        display:block;
+        font-size: 25px;
+    }
+
+
+
+    .feature{
+        padding-top:15px;
+        padding-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    html {
+      /* Reducing base font size will reduce all rem sizes */
+      font-size: 20px;
+    }
+
+    /* You can reduce font sizes manually as well */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .custombg p{
+        font-size: 20px;
+    }
+
+    .customabout p{
+        font-size:20px;
+
+    }
+
+    .leftside {
+        padding-top: 130px;
+    }
+
+    .rightside{
+        height:1400px;
+    }
+
+    .card{
+        width:85%;
+        height: 40%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .leftside {
+        height: 40vh;
+    }
+    
+    .rightside{
+        height:1600px;
+    }
+
+    .customsubscribe{
+        height: 700px;
+    }
+
+    .card{
+        width:95%;
+        height: 10%;
+    }
+
+    .card-body{
+        padding:5px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-brand{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .navbar-brand{
+        font-size: 17px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    *p{
+        font-size: 15px;
+    }
+
+    
+    .rightside{
+        height:1800px;
+    }
+    
+}
